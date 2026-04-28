@@ -1,0 +1,40 @@
+[package]
+name = "character-reconition-rs"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "character_recognition"
+path = "src/lib.rs"
+
+[[bin]]
+name = "charrecog"
+path = "src/main.rs"
+
+[features]
+cuda = ["candle-core/cuda", "candle-nn/cuda"]
+
+[dependencies]
+candle-core = "0.10.2"
+candle-nn = "0.10.2"
+clap = { version = "4.6.1", features = ["derive"] }
+fontdb = "0.23.0"
+geo = "0.33.1"
+linfa = "0.8.1"
+linfa-reduction = "0.8.1"
+lyon_geom = "1.0.19"
+lyon_path = "1.0.19"
+ndarray = "0.16"
+plotters = "0.3.7"
+rand = "0.10.1"
+roxmltree = "0.21.1"
+rstar = "0.12.2"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+svg = "0.18.0"
+svgtypes = "0.16.1"
+tempfile = "3.27.0"
+thiserror = "2.0.18"
+ttf-parser = "0.25.1"
+usvg = "0.47"
+uuid = { version = "1.23.1", features = ["v4"] }
