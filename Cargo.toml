@@ -19,7 +19,7 @@ candle-core = "0.10.2"
 candle-nn = "0.10.2"
 clap = { version = "4.6.1", features = ["derive"] }
 fontdb = "0.23.0"
-geo = "0.33.1"
+geo = "0.31"
 linfa = "0.8.1"
 linfa-reduction = "0.8.1"
 lyon_geom = "1.0.19"
